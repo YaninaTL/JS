@@ -21,3 +21,27 @@ zip = '60040';
 state = 'CA';
 console.log(address, zip, state);
 
+const name = "My name's..."
+// OR
+const name1 = 'My name\'s...'
+// They are equal
+
+const firstName = 'Yanina';
+const lastName = 'Tormos Lopez';
+let fullName;
+console.log('Hello there your full name is : ' + firstName + '' + lastName);
+// OR
+let fullName = firstName + "" + lastName;
+console.log("Hello there your full name is : " + fullName);
+
+
+const website = 'google';
+const url = 'https://www.' + website + '.com';
+console.log(url);
+// Open Google
+
+
+
+
+
+
