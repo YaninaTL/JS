@@ -61,3 +61,30 @@ greet(lisa, 'Bob');
 greet(bob);
 //greet Susy
 greet(susy);
+
+
+
+//1 inch 2.54cm
+
+
+const wallHeight = 80;
+
+function calculate(value){
+    const newValue = value * 2.54;
+    // console.log('The value in cm is : ' + value * 2.54 + ' cm');
+    return 'newValue';
+    //Need to have return
+    //add const in the function
+
+    //Another way to make the code shorter
+    //return value * 2.54;
+}
+
+const width = calculate(100);
+const height = calculate(wallHeight);
+
+const dimensions = [width, height];
+console.log(dimensions)
+//[0, 0] when width = 0, height = 0
+//after adding calculate and call the function -> 254 cm for the width and 203.2 cm for height
+
