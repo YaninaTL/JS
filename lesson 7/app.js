@@ -50,6 +50,44 @@ console.log(value);
 
 
 
+//Array Properties and Methods
+
+let names = ['John', 'Bob', 'Anna', 'Susy', 'Peter'];
+
+//length
+console.log(names.length);
+//5
+
+console.log(names[4]);
+//Peter
+
+//How to reach the last one every time?
+console.loge(names[names.length - 1]);
+//Peter
+
+//concat
+const lastName = ['Sun', 'Moon', 'Heaven'];
+const allNames = names.concat(lastName);
+console.log(allNames)
+//8 and all names
+
+//reverse
+console.log(allNames.reverse());
+
+//unshift - shift - push - pop
+allNames.unshift('Ben');
+console.log(allNames);
+allNames.shift('')
+
+
+
+//splice
+//Mutates the original!!!
+const specificNames = allNames.splice(2, 1)
+//Cut the previous array
+
+
+
 
 
 
