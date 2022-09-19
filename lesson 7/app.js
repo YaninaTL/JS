@@ -39,5 +39,17 @@ console.log(text.slice(-3));
 
 
 
+//Template Literals
+
+const name_ = 'John';
+const age = 25;
+
+
+const value = `Hey it's ${name_} and he is ${age} years old.`;
+console.log(value);
+
+
+
+
 
 
