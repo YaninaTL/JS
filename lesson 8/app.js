@@ -30,7 +30,7 @@ for(let i = 0;i < names.length;i++) {
 
     function calculateTotal(arr) {
       let total = 0;
-      for(let i = 0; i < arr.length,i++);
+      for(let i = 0; i < arr.length; i++);
       //i < arr.length -> it's a stopper
       // {console.log(arr[i]);}
       
@@ -62,6 +62,22 @@ for(let i = 0;i < names.length;i++) {
       random:randomTotal,
     });
     //gas: sum, food: sum....
+
+  //Object
+
+  let person = {name:'Bob'};
+  let person2 = person;
+
+  
+
+  console.log(`The name of the first person is ${person.name}`);
+  console.log(`The name of the second person is ${person2.name}`);
+  // Bob in both cases
+
+
+  //If we change the value
+  person2.name = "Susy";
+  //Susy in BOTH cases (because it's an OBJECT - reference)
 
 
 
