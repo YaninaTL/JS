@@ -109,4 +109,13 @@ for(let i = 0;i < names.length;i++) {
   //"" '' `` 0 -0 Nan false null undefined -> Falsy
 
 
+//unary (typeof) -> one operand
+//binary (assignment)
+//ternary (if else AND ? :)
+
+const value_ = 1 < 0;
+
+value_ ? console.log('value is true') : console.log('value is false');
+//false
+
 
