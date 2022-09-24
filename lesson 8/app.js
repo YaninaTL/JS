@@ -82,3 +82,18 @@ for(let i = 0;i < names.length;i++) {
 
 
 
+  //Null and Undefined
+
+  let number = 20 + null 
+  //20 + 0 -> 20
+
+  let number2 = 20 + undefined; 
+  //20 + 0 -> NaN
+  //We didn't set the value (even not 0)
+
+
+  //Truthy and Falsy
+
+
+
+
