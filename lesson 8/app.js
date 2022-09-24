@@ -94,6 +94,19 @@ for(let i = 0;i < names.length;i++) {
 
   //Truthy and Falsy
 
+  const bool1 = true;
+  const bool2 = 2 > 1;
+
+  const text = 'John';
+
+  if(text) {
+    console.log('Truthy!');
+    } else {
+      console.log('Falsy');
+  }
+  //Truthy
+
+  //"" '' `` 0 -0 Nan false null undefined -> Falsy
 
 
 
