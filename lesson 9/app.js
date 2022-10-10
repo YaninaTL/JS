@@ -66,5 +66,3 @@ function greet(aName, cb) {
 
 greet("Bob", morning);
 greet("Peter", morning);
-
-//Callback
