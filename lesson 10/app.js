@@ -30,3 +30,29 @@ function showPerson(person) {
 people.forEach(function (item) {
   console.log(item.position.toUpperCase());
 });
+
+//map
+//return a NEW array but the same amount
+
+const ages = people.map(function () {
+  // console.log(person);
+  // return 'hello world';
+  //3 times as 3 items in the array
+
+  return person.age + 20;
+  //new array with new data
+});
+
+const newPeopleArr = people.map(function (person) {
+  return {
+    firstName: person.name.toUpperCase(),
+    oldAge: person.age + 20,
+  };
+});
+
+const namesArr = people.map(function (person) {
+  return `<h1>${person.name}</h1>`;
+});
+
+document.body.innerHTML = names.join("");
+console.log(ages);
