@@ -10,9 +10,9 @@ for (let i = 0; i < numbers.length; i++) {
 // doesn't return a NEW array
 
 const people = [
-  { name: "Bob", age: 20, position: "Developer" },
-  { name: "Peter", age: 50, position: "The boss" },
-  { name: "Susy", age: 20, position: "Designer" },
+  { name: "Bob", age: 20, position: "Developer", id: 1 },
+  { name: "Peter", age: 50, position: "The boss", id: 2 },
+  { name: "Susy", age: 20, position: "Designer", id: 3 },
 ];
 
 function showPerson(person) {
@@ -60,9 +60,15 @@ console.log(ages);
 //filter
 const youngPeople = people.filter((person) => {
   return person.age <= 25;
-  // Bob, Susy
+  // Bob, Susy in an ARRAY
 });
 
 // if not match -> empty array
 
-//findIndex
+//find
+const findPerson = people.find((person) => {
+  return person.id === 3;
+  // Susy
+});
+// only for unique values, show the FIRST one that match
+// returns an object NOT an array
