@@ -56,3 +56,13 @@ const namesArr = people.map(function (person) {
 
 document.body.innerHTML = names.join("");
 console.log(ages);
+
+//filter
+const youngPeople = people.filter((person) => {
+  return person.age <= 25;
+  // Bob, Susy
+});
+
+// if not match -> empty array
+
+//findIndex
