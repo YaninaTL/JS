@@ -72,3 +72,5 @@ const findPerson = people.find((person) => {
 });
 // only for unique values, show the FIRST one that match
 // returns an object NOT an array
+
+//reduce
