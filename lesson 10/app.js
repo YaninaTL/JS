@@ -10,9 +10,9 @@ for (let i = 0; i < numbers.length; i++) {
 // doesn't return a NEW array
 
 const people = [
-  { name: "Bob", age: 20, position: "Developer", id: 1 },
-  { name: "Peter", age: 50, position: "The boss", id: 2 },
-  { name: "Susy", age: 20, position: "Designer", id: 3 },
+  { name: "Bob", age: 20, position: "Developer", id: 1, salary: 200 },
+  { name: "Peter", age: 50, position: "The boss", id: 2, salary: 200 },
+  { name: "Susy", age: 20, position: "Designer", id: 3, salary: 200 },
 ];
 
 function showPerson(person) {
@@ -74,3 +74,16 @@ const findPerson = people.find((person) => {
 // returns an object NOT an array
 
 //reduce
+//2 parameters -> total/current
+const total = people.reduce(function (acc, currItem) {
+  acc += currItem.salary;
+  // 0 + 200 = 200
+
+  // RETURN ALWAYS
+  return acc;
+}, 0);
+// 0
+//without the first parameter returned -> undefined
+
+console.log(total);
+//500
