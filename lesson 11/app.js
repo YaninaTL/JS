@@ -35,3 +35,30 @@ const result10 = Math.floor(Math.random() * 10);
 const result11 = Math.ceil(Math.random() * 10);
 // Give from 1 to 10
 //const result10 = Math.floor(Math.random() * 10 + 1);
+
+//Date
+const months = [January, February];
+const days = [1, 2, 3];
+
+const date = new Date();
+const month = date.getMonth();
+
+console.log(months);
+//5
+
+console.log(months[month]);
+//June
+
+const day = date.getDay();
+//return the index
+console.log(days[day]);
+// Monday
+
+console.log(date.getDate());
+console.log(date.getFullYear());
+
+const sentence = `${days[day]}, ${date.getDate()} ${
+  months[month]
+} ${date.getFullYear()}`;
+
+console.log(sentence);
