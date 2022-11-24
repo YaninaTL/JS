@@ -39,8 +39,10 @@ const result11 = Math.ceil(Math.random() * 10);
 //Date
 const months = [January, February];
 const days = [1, 2, 3];
+//and so on...
 
 const date = new Date();
+// const date = new Date('1/12/2004');
 const month = date.getMonth();
 
 console.log(months);
@@ -62,3 +64,6 @@ const sentence = `${days[day]}, ${date.getDate()} ${
 } ${date.getFullYear()}`;
 
 console.log(sentence);
+
+document.body.innerHTML = sentence;
+//to implement into the html
