@@ -51,3 +51,26 @@ const allChildren = result2.childNodes;
 
 const children = result2.children;
 //less as we use only children
+
+//PARENTS
+const heading = document.querySelector("h2");
+const parent = heading.parentElement;
+parent.style.color = "red";
+//if we add more headings (even h3 will be RED)
+
+//SIBLINGS
+const first = document.querySelector(".first");
+const second = (first.nextSibling.nextSibling.style.color = "red");
+// 2 times otherwise a white space
+const first1 = document.querySelector(".first");
+first.nextElementSibling.style.color = "red";
+//other way
+
+//nodeValue
+const item1 = document.getElementById("special");
+const value = item1.firstChild.nodeValue;
+//to get the value in 2 STEPS
+
+//textContent
+const easyValue = item1.textContent;
+//in 1 STEP
